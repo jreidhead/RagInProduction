@@ -21,7 +21,7 @@ def send_to_openai(message):
     # This function sends a message to OpenAI's API and returns the response.
   openai.api_key = os.environ.get("OPENAI_API_KEY")
   completion = openai.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4o-mini",
     messages=[{"role": "user", "content": message}]
     )
   return completion.choices[0].message.content.strip()
