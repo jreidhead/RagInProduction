@@ -25,4 +25,4 @@ def test_run_RAG():
   for i in range(len(eval_questions)):
     result = evaluate_generated_answer(eval_answers[i],
       generated_answers[i])
-    assert "PASS" in result
+    assert result is True, f"Test failed for question: {eval_questions[i]}"
