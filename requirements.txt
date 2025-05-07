@@ -1,4 +1,10 @@
 openai==1.60.2
 dotenv
 pytest
- 
+PyPDF2==2.5.0
+scikit-learn==1.2.2
+sentence-transformers==2.2.2
+qdrant-client==0.10.0
+nltk==3.7.3
+azure-core
+azure-search-documents
